@@ -23,12 +23,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#FAF9F6] px-4">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased container mx-auto max-w-screen-sm px-4 font-[family-name:var(--font-geist-sans)] bg-[#FAF9F6]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased container mx-auto max-w-screen-sm p-8 font-[family-name:var(--font-geist-sans)] border my-4 shadow-sm bg-white`}
       >
         <Navbar />
-        <main className="my-4">{children}</main>
+        <main>{children}</main>
+        <div id="copyright" className="mt-8">
+          <p className="text-xs text-zinc-200">&copy; Copyright 2024, Dylan Hearn.</p>
+        </div>
       </body>
     </html>
   );

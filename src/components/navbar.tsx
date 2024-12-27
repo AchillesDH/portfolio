@@ -1,12 +1,10 @@
 import Link from "next/link";
-import { Clock } from "./clock";
 
 export function Navbar() {
   return (
-    <div className="border-b border-dashed py-4">
-      <Clock />
+    <div className="mb-8">
       <div className="flex w-full mb-2">
-        <p className="text-lg mr-4 font-semibold bg-black text-white px-2">dylan hearn</p>
+      <p className="text-lg mr-4 font-semibold bg-black text-white px-2">dylan hearn</p>
         <div className="flex items-center gap-4 text-sm">
           <Link href="#about" className="hover:underline">
             about
@@ -17,14 +15,11 @@ export function Navbar() {
           <Link href="#projects" className="hover:underline">
             projects
           </Link>
-          <Link href="#contact" className="hover:underline">
-            contact
-          </Link>
         </div>
       </div>
 
       <div>
-        <Link href="/assets/cv/dylan-hearn-cv.pdf" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed font-mono text-xs flex items-center gap-1">
+        <Link href="/assets/cv/dylan-hearn-cv.pdf" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed font-mono text-xs flex items-center gap-1 w-fit">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="12"
